@@ -763,35 +763,11 @@
       </div>
     </main>
 
+    <!-- supabase -->
+    <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+
     <!-- custom js -->
     <script src="./assets/js/script.js"></script>
-
-    <!-- lightweight contact form validation (native, no dependencies) -->
-    <script>
-      (function () {
-        const form = document.getElementById('contact-form');
-        if (!form) return;
-
-        const submitBtn = form.querySelector('.form-btn');
-
-        form.addEventListener('input', () => {
-          submitBtn.disabled = !form.checkValidity();
-        });
-        submitBtn.disabled = !form.checkValidity();
-
-        form.addEventListener('submit', (event) => {
-          event.preventDefault();
-          if (!form.checkValidity()) return;
-
-          // TODO: wire this up to your backend / email service (e.g. Formspree, a Cloud Function, EmailJS).
-          const data = Object.fromEntries(new FormData(form).entries());
-          console.log('Contact form submitted:', data);
-
-          form.reset();
-          submitBtn.disabled = true;
-        });
-      })();
-    </script>
 
     <!-- ionicons -->
     <script
