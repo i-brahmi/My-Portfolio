@@ -1,896 +1,785 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ilyes Brahmi - Personal Portfolio</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alfaizkhan - Personal Portfolio</title>
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
 
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
+  <body>
+    <main>
+      <!-- ============ SIDEBAR ============ -->
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="assets/images/pfp.jpg"
+              alt="Ilyes Brahmi"
+              class="avatar-img"
+            />
+          </figure>
 
-<body>
+          <div class="info-content">
+            <h1 class="name" title="Ilyes Brahmi">Ilyes Brahmi</h1>
+            <p class="title">Flutter Mobile Developer</p>
+          </div>
 
-  <!--
-    - #MAIN
-  -->
-
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Alfaizkhan Pathan" width="80">
-        </figure>
-
-        <!-- <div class="info-content">
-          <h1 class="name" title="Alfaizkhan Pathan">Alfaizkhan Pathan</h1>
-          <p class="title">Flutter | Android | iOS</p>
-        </div> -->
-
-        <div class="info-content">
-          <h1 class="name" title="Alfaizkhan Pathan">Alfaizkhan Pathan</h1>
-          <!-- <p class="title" title="Flutter | Android | iOS">Flutter | Android | iOS</p> -->
-          <p class="title">Lead Mobile Developer</p>
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
 
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:alfaizkhan2810@gmail.com" class="contact-link">alfaizkhan2810@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+919737039241" class="contact-link">+91 9737039241</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="1982-06-23">October 28, 1997</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Vadodara, Gujarat, India</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://github.com/alfaizkhan" target="_blank" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/alfaizkhan/" target="_blank" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.instagram.com/i_m_alfaizkhan/" target="_blank" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-          <li class="social-item">
-            <a href="https://t.me/i_m_alfaizkhan" target="_blank" class="social-link">
-              <ion-icon name="chatbubbles-outline"></ion-icon>
-            </a>
-          </li>
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            I am a seasoned mobile application developer with over 5 years of expertise in mobile application development, I specialise in Android Native, Flutter, and Xamarin Cross-Platform technologies. My work focuses on crafting innovative, high-performance mobile applications that meet user and business needs while adhering to the highest quality standards. 
-          </p>
-          <header>
-            <h2 class="h4 article-title">Core Competencies</h2>
-          </header>
-          <p>
-            <br>• Advanced proficiency in Android Studio, Java, Dart, and the Flutter Framework.</br>
-            <br>• Integration of SQLite, RESTful APIs, and extensive use of Firebase Services (Authentication, Realtime Database, Cloud Functions, FCM, Crashlytics, and more). </br>
-            <br>• Skilled in Google Maps APIs (routes, navigation, and directions) and payment gateway integration such as Stripe. </br>
-            <br>• Expertise in source control management with Git (GitHub, GitLab, Bitbucket) and automating workflows using CI/CD pipelines. </br>
-            <br>• Deep understanding of the mobile app development lifecycle, architecture, and emerging trends. </br>
-            <br>•  Strong debugging and problem-solving skills to deliver error-free applications. </br>
-          </p>
-          <header>
-            <h2 class="h4 article-title">Key Contributions</h2>
-          </header>
-          <p>
-            <br>• Successfully collaborated with cross-functional teams, including designers and QA professionals, to deliver seamless and intuitive user experiences.</br>
-            <br>• Ensured app responsiveness and performance through thorough testing and debugging before release.  </br>
-            <br>• Delivered scalable and maintainable applications by adhering to clean coding principles and best practices. </br>
-            <br>• Proactively stayed ahead of mobile development trends to incorporate cutting-edge features into apps. </br>
-          </p>
-          <p>
-            I am a seasoned mobile application developer with over 5 years of expertise in mobile application development, I specialise in Android Native, Flutter, and Xamarin Cross-Platform technologies. My work focuses on crafting innovative, high-performance mobile applications that meet user and business needs while adhering to the highest quality standards. 
-          </p>
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
               </div>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
-
-                <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
-                </p>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+                <a href="mailto:i.brahmi@esi-sba.dz" class="contact-link">
+                  i.brahmi@esi-sba.dz
+                </a>
               </div>
-
             </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
-
-                <p class="service-item-text">
-                  I make high-quality photos of any category at a professional level.
-                </p>
-              </div>
-
-            </li>
-
           </ul>
 
-        </section>
+          <div class="separator"></div>
 
-
-        <!--
-          - testimonials
-        -->
-
-        <section class="testimonials">
-
-          <h3 class="h3 testimonials-title">Testimonials</h3>
-
-          <ul class="testimonials-list has-scrollbar">
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Client From USA" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Client From USA</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                  </p>
-                </div>
-
-              </div>
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://github.com/i-brahmi"
+                target="_blank"
+                class="social-link"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
             </li>
 
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/brahmi-ilyes-571474339/"
+                target="_blank"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
           </ul>
+        </div>
+      </aside>
 
-        </section>
+      <!-- ============ MAIN CONTENT ============ -->
+      <div class="main-content">
+        <!-- ============ NAVBAR ============ -->
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
 
+        <!-- ============ ABOUT ============ -->
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
 
-        <!--
-          - testimonials modal
-        -->
+          <section class="about-text">
+            <p>
+              A passionate Flutter developer with strong expertise in
+              cross-platform apps, REST APIs, UI/UX, widgets, and state
+              management solutions. Proven track record in delivering
+              cutting-edge solutions, including API integration, third-party
+              libraries, and performance optimization. Adept at debugging to
+              ensure high-quality, responsive apps and an agile collaborator
+              committed to staying current with industry trends.
+              <br />
 
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Client From USA" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Client From USA</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                  industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-                  scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-                  into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-                  release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-                  software like Aldus PageMaker including versions of Lorem Ipsum.
-                </p>
-              </div>
-
-            </div>
-
+              <br />
+              If you're seeking a skilled Flutter developer to breathe life into
+              your project and exceed your expectations, I am here to
+              collaborate and create magic together. Reach out, and let's
+              transform your vision into a reality!
+            </p>
           </section>
 
-        </div>
+          <!-- service -->
+          <section class="service">
+            <h3 class="h3 service-title">What I'm doing</h3>
 
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-app.svg"
+                    alt="mobile app icon"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Mobile apps</h4>
+                  <p class="service-item-text">
+                    Professional development of applications for iOS and
+                    Android.
+                  </p>
+                </div>
+              </li>
 
-        <!--
-          - clients
-        -->
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="assets/images/scripting.svg"
+                    alt="scripting icon"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Scripting</h4>
+                  <p class="service-item-text">
+                    Skilled in automating workflows using CI/CD pipelines and
+                    scripting libraries.
+                  </p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="assets/images/uiux.svg"
+                    alt="scripting icon"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">UI/UX Design</h4>
+                  <p class="service-item-text">
+                    Creating visually appealing and user-friendly interfaces for
+                    mobile applications.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
 
-        <!-- <section class="clients">
+          <!-- testimonials -->
+          <section class="testimonials">
+            <h3 class="h3 testimonials-title">Testimonials</h3>
 
-          <h3 class="h3 clients-title">Clients</h3>
+            <ul class="testimonials-list has-scrollbar">
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <figure class="testimonials-avatar-box">
+                    <img
+                      src="./assets/images/avatar-1.png"
+                      alt="Users Review"
+                      width="60"
+                      data-testimonials-avatar
+                    />
+                  </figure>
 
-          <ul class="clients-list has-scrollbar">
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Users Review
+                  </h4>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
+                  <div class="testimonials-text" data-testimonials-text>
+                    <p>
+                      You did an exceptional job on this project! The
+                      application runs flawlessly, handles every feature
+                      beautifully, and the user experience is incredibly smooth.
+                      It completely aligns with my vision and functions exactly
+                      as I had expected. Highly recommended for anyone looking
+                      for top-tier development work.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
+          <!-- skills / tech stack -->
+          <section class="clients">
+            <h3 class="h3 clients-title">Skills & Tech Stack</h3>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
+            <ul class="clients-list">
+              <li class="clients-item">
+                <a href="https://flutter.dev/" target="_blank">
+                  <img
+                    alt="Flutter logo"
+                    src="/assets/images/flutterio-icon.svg"
+                  />
+                </a>
+              </li>
+              <li class="clients-item">
+                <a href="https://dart.dev/" target="_blank">
+                  <img alt="Dart logo" src="assets/images/dartlang-icon.svg" />
+                </a>
+              </li>
+              <li class="clients-item">
+                <a href="https://firebase.google.com/" target="_blank">
+                  <img
+                    alt="Firebase logo"
+                    src="/assets/images/firebase-icon.svg"
+                  />
+                </a>
+              </li>
+              <li class="clients-item">
+                <a href="https://supabase.com/" target="_blank">
+                  <img
+                    alt="Supabase logo"
+                    src="/assets/images/supabase-icon.svg"
+                  />
+                </a>
+              </li>
+              <li class="clients-item">
+                <a href="https://www.postman.com/" target="_blank">
+                  <img
+                    alt="Postman logo"
+                    src="/assets/images/getpostman-icon.svg"
+                  />
+                </a>
+              </li>
+              <li class="clients-item">
+                <a href="https://www.figma.com/" target="_blank">
+                  <img alt="Figma logo" src="/assets/images/figma-icon.svg" />
+                </a>
+              </li>
+              <li class="clients-item">
+                <a href="https://www.python.org/" target="_blank">
+                  <img alt="Python logo" src="/assets/images/python-icon.svg" />
+                </a>
+              </li>
+              <li class="clients-item">
+                <a href="https://github.com/" target="_blank">
+                  <img
+                    alt="GitHub logo"
+                    src="/assets/images/github-svgrepo-com.svg"
+                  />
+                </a>
+              </li>
+            </ul>
+          </section>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
+          <!-- testimonials modal -->
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
 
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Users Review"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              </div>
 
-          </ul>
+              <div class="modal-content">
+                <h4 class="h3 modal-title" data-modal-title>Users Review</h4>
+                <!-- Note: script.js populates this from the clicked testimonial card -->
+                <div data-modal-text></div>
+              </div>
+            </section>
+          </div>
+        </article>
 
-        </section> -->
+        <!-- ============ RESUME ============ -->
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
 
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+          <!-- TODO: replace with your real education history -->
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Education</h3>
             </div>
 
-            <h3 class="h3">Education</h3>
-          </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Your University Here</h4>
+                <span>Start — End</span>
+                <p class="timeline-text">
+                  Degree / Field of Study
+                  <br />
+                  Grade / Honors
+                </p>
+              </li>
+            </ol>
+          </section>
 
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Parul University</h4>
-
-              <span>2015 — 2019</span>
-
-              <p class="timeline-text">
-                Bachelor of Technology - Computer Science
-                <br>
-                Grade: 3.14 GPA
-                </br>
-
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Lal Bahadur Shastri Vidhyalaya</h4>
-
-              <span>2013 — 2015</span>
-
-              <p class="timeline-text">
-                High School Diploma, Mathematics
-                <br>
-                Grade: A+
-                </br>
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+          <!-- TODO: replace with your real work / project experience -->
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="briefcase-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Experience</h3>
             </div>
 
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Senior Mobile Application Developer</h4>
-              <span>TenUp Software Services LLP</span>
-
-              <span>Apr 2022 — Present</span>
-
-              <p class="timeline-text">
-                Skills: Google Cloud Platform (GCP) · AngularJS · iOS · Ionic · Flutter · Android · Firebase
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Software Development Engineer II </h4>
-              <span>Matrix Comsec Pvt. Ltd.</span>
-              <span>Apr 2021 - Apr 2022 · 1 yr 1 mo</span>
-
-              <p class="timeline-text">
-                Work and manage the Matrix products based on Security, Access Control & Time-Attendance called Cosec
-                APTA, Cosec ACS, Cosec VMS. This Product is used to mark employees' attendance on a daily basis using
-                face recognition, Live location, or via communication with the company door devices. Proofreading app
-                code and correcting mistakes before each app is released.
-                <br>
-                Skills: Flutter · Android · Xamarin · C# · SwiftUI
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Android and Flutter Developer Trainee</h4>
-              <span>Rishabh Software Pvt. Ltd.</span>
-
-              <span>Aug 2019 - Dec 2020 · 1 yr 5 mos</span>
-
-              <p class="timeline-text">
-                · Worked on the Flutter project based on the laundry In which you can access features like Pickup,
-                Drop-off the clothes for different Laundry service based on your location. You can also Make payment
-                online through the application itself.
-                <br>· Worked on the Flutter project based on the laundry In which you can access features like Pickup,
-                Drop-off the clothes for different Laundry service based on your location. You can also Make payment
-                online through the application itself.
-                <br>
-                Skills: Flutter · Android · Xamarin
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Android Developer Intern</h4>
-              <span>Rishabh Software Pvt. Ltd.</span>
-
-              <span>Jun 2019 - Jul 2019 · 2 mos</span>
-
-              <p class="timeline-text">
-                · A flutter warranty app in which you can add the products warranty with the Whole description and
-                Photos. You can also set a expiry Reminder. When your product going to be expired, the app give you
-                notification for specific product as per your notification preferences.<br>
-                Skills: Flutter · Android · Xamarin
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Software Developer Intern</h4>
-              <span>Rishabh Software Pvt. Ltd.</span>
-
-              <span>Jan 2019 - May 2019 · 5 mos</span>
-
-              <p class="timeline-text">
-
-                Skills: Java · Spring Boot
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Flutter & Dart</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Android & Java</h5>
-                <data value="80">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">iOS</h5>
-                <data value="75">75%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
-              </div>
-
-            </li>
-
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Firebase</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Ionic</h5>
-                <data value="70">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Mobile Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Pub.dev</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Role / Project Title</h4>
+                <span>Company or Project</span>
+                <span>Start — End</span>
+                <p class="timeline-text">
+                  Description of what you built and the impact it had.
+                  <br />
+                  Skills: Flutter · Firebase · Supabase
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="skill">
+            <h3 class="h3 skills-title">My skills</h3>
+
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Flutter & Dart</h5>
+                  <data value="90">90%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Mobile Applications</button>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Firebase</h5>
+                  <data value="90">90%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%"></div>
+                </div>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Pub.dev</button>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Supabase</h5>
+                  <data value="80">80%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%"></div>
+                </div>
               </li>
 
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">BLoC / Cubit</h5>
+                  <data value="85">85%</data>
+                </div>
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 85%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!-- ============ PORTFOLIO ============ -->
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>Mobile Applications</button>
+              </li>
+              <li class="filter-item">
+                <button data-filter-btn>ui/ux</button>
+              </li>
             </ul>
 
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Finance</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Orizon</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-      <article class="blog" data-page="blog">
-
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a href="https://medium.com/@i_m_alfaizkhan/exploring-the-stripe-payment-gateway-in-flutter-e8524a0ade75"
-                target="_blank">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Exploring the Stripe Payment Gateway In Flutter"
-                    loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Flutter</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-07-27">Jul 27, 2022 · 7 min read</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Exploring the Stripe Payment Gateway In Flutter</h3>
-
-                  <p class="blog-text">
-                    Stripe payment gateway integration in flutter project.
-                  </p>
-
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
                 </div>
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
 
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="contact">
-
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
-
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=vadodara&amp;t&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>Mobile Applications</button>
+                </li>
+                <li class="select-item">
+                  <button data-select-item>ui/ux</button>
+                </li>
+              </ul>
             </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <!-- TODO: swap in your real projects (e.g. Fixa, Axon) -->
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="mobile applications"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/michkat.png"
+                      alt="Project name"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Michkat</h3>
+                  <p class="project-category">Mobile Applications</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="mobile applications"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/fixa.png"
+                      alt="Project name"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Fixa</h3>
+                  <p class="project-category">Mobile Applications</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="mobile applications"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/tayf.png"
+                      alt="Project name"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Tayf</h3>
+                  <p class="project-category">Mobile Applications</p>
+                </a>
+              </li>
 
-            <button class="form-btn" type="submit">
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="mobile applications"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/tayf-doctor.png"
+                      alt="Project name"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Tayf(Doctor's)</h3>
+                  <p class="project-category">Mobile Applications</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="mobile applications"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/esi-attend.png"
+                      alt="Project name"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">ESI Attend</h3>
+                  <p class="project-category">Mobile Applications</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="mobile applications"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/iqra.jpg"
+                      alt="Project name"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Iqra</h3>
+                  <p class="project-category">ui/ux</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="mobile applications"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/inge.png"
+                      alt="Project name"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Inge Scanner</h3>
+                  <p class="project-category">Mobile Applications</p>
+                </a>
+              </li>
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="mobile applications"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/exarly.png"
+                      alt="Project name"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">eCarly</h3>
+                  <p class="project-category">Mobile Applications</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-          </form>
+        <!-- ============ BLOG ============ -->
+        <article class="blog" data-page="blog">
+          <header>
+            <h2 class="h2 article-title">Blog</h2>
+          </header>
 
-        </section>
+          <section class="blog-posts">
+            <ul class="blog-posts-list">
+              <li class="blog-post-item">
+                <a
+                  href="https://medium.com/@i_m_alfaizkhan/exploring-the-stripe-payment-gateway-in-flutter-e8524a0ade75"
+                  target="_blank"
+                >
+                  <figure class="blog-banner-box">
+                    <img
+                      src="./assets/images/blog-1.jpg"
+                      alt="Exploring the Stripe Payment Gateway In Flutter"
+                      loading="lazy"
+                    />
+                  </figure>
 
-      </article>
+                  <div class="blog-content">
+                    <div class="blog-meta">
+                      <p class="blog-category">Flutter</p>
+                      <span class="dot"></span>
+                      <time datetime="2022-07-27">
+                        Jul 27, 2022 · 7 min read
+                      </time>
+                    </div>
 
-    </div>
+                    <h3 class="h3 blog-item-title">
+                      Exploring the Stripe Payment Gateway In Flutter
+                    </h3>
+                    <p class="blog-text">
+                      Stripe payment gateway integration in a Flutter project.
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
 
-  </main>
+        <!-- ============ CONTACT ============ -->
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
 
+          <!-- TODO: point this at your actual location -->
+          <!-- <section class="mapbox" data-mapbox>
+            <figure>
+              <iframe
+                src="https://www.google.com/maps?width=600&height=400&hl=en&q=El%20Oued%20Algeria&t&z=10&ie=UTF8&iwloc=B&output=embed"
+                width="400"
+                height="300"
+                loading="lazy"
+              ></iframe>
+            </figure>
+          </section> -->
 
+          <section class="contact-form">
+            <!-- <h3 class="h3 form-title">Contact Form</h3> -->
 
+            <form
+              action="#"
+              class="form"
+              id="contact-form"
+              data-form
+              novalidate
+            >
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
 
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+                rows="10"
+              ></textarea>
 
+              <button class="form-btn" type="submit">
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
 
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
+    <!-- custom js -->
+    <script src="./assets/js/script.js"></script>
 
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- lightweight contact form validation (native, no dependencies) -->
+    <script>
+      (function () {
+        const form = document.getElementById('contact-form');
+        if (!form) return;
 
-</body>
+        const submitBtn = form.querySelector('.form-btn');
 
+        form.addEventListener('input', () => {
+          submitBtn.disabled = !form.checkValidity();
+        });
+        submitBtn.disabled = !form.checkValidity();
+
+        form.addEventListener('submit', (event) => {
+          event.preventDefault();
+          if (!form.checkValidity()) return;
+
+          // TODO: wire this up to your backend / email service (e.g. Formspree, a Cloud Function, EmailJS).
+          const data = Object.fromEntries(new FormData(form).entries());
+          console.log('Contact form submitted:', data);
+
+          form.reset();
+          submitBtn.disabled = true;
+        });
+      })();
+    </script>
+
+    <!-- ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
