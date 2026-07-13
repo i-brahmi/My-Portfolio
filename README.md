@@ -1,7 +1,8 @@
-## Hi there, I'm Alfaizkhan Pathan :wave:
+## Hi there, I'm Ilyes :wave:
 
 ### About me in a few words:
-I am a seasoned mobile application developer with over 5 years of expertise in mobile application development, I specialise in Android Native, iOS and Flutter technologies. My work focuses on crafting innovative, high-performance mobile applications that meet user and business needs while adhering to the highest quality standards. I work on all aspects of the development lifecycle, applying my knowledge of OOP, MVVM, MVP, MVI, and MVC principles. My past work includes building user-focused, innovative, keep user security and performance UI, and developing clean code with teamwork.
+
+I am a seasoned mobile application developer , I specialise in Android Native, iOS and Flutter technologies. My work focuses on crafting innovative, high-performance mobile applications that meet user and business needs while adhering to the highest quality standards. I work on all aspects of the development lifecycle, applying my knowledge of OOP, MVVM, MVP, MVI, and MVC principles. My past work includes building user-focused, innovative, keep user security and performance UI, and developing clean code with teamwork.
 
 <p><a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/Alfaizkhan/Alfaizkhan/main/flutter_development.gif"><img src="https://raw.githubusercontent.com/Alfaizkhan/Alfaizkhan/main/flutter_development.gif" alt="Header" title="Header" style="max-width:100%;"></a></p>
 
