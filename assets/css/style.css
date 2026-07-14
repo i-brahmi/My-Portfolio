@@ -1854,6 +1854,10 @@ textarea.form-input::-webkit-resizer {
     grid-template-columns: 1fr 1fr;
   }
 
+  .input-wrapper input[name="fullname"] {
+    grid-column: span 2;
+  }
+
   .form-btn {
     width: max-content;
     margin-left: auto;

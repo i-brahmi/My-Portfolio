@@ -90,6 +90,7 @@ contactForm.addEventListener('submit', async (event) => {
   const formData = new FormData(contactForm);
   const fullName = formData.get('fullname').trim();
   const emailAddress = formData.get('email').trim();
+  const phone = formData.get('phone').trim();
   const message = formData.get('message').trim();
 
   // 4. Send it to your PostgreSQL table 'messages'
@@ -97,6 +98,7 @@ contactForm.addEventListener('submit', async (event) => {
     {
       full_name: fullName,
       email_address: emailAddress,
+      phone_number: phone,
       message: message,
     },
   ]);
