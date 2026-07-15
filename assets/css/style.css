@@ -74,6 +74,7 @@
    */
 
   /* gradient */
+  scrollbar-gutter: stable;
 
   --bg-gradient-onyx: linear-gradient(
     to bottom right,
@@ -988,6 +989,272 @@ main {
 }
 
 /*-----------------------------------*\
+  #PROJECT MODAL
+\*-----------------------------------*/
+
+/* Project card button — inherits the existing project-item > a styles */
+.project-card-btn {
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
+}
+
+/* Modal container (same pattern as testimonials) */
+.project-modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  z-index: 20;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.project-modal-container::-webkit-scrollbar {
+  display: none;
+}
+
+.project-modal-container.active {
+  pointer-events: all;
+  visibility: visible;
+}
+
+/* The modal card */
+.project-modal {
+  background: var(--eerie-black-2);
+  position: relative;
+  padding: 28px 24px 24px;
+  margin: 16px;
+  border: 1px solid var(--jet);
+  border-radius: 20px;
+  box-shadow: var(--shadow-5);
+  transform: scale(1.08);
+  opacity: 0;
+  transition: var(--transition-1);
+  z-index: 2;
+  width: 100%;
+  max-width: 780px;
+}
+
+.project-modal-container.active .project-modal {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* Two-column layout: mockup left, info right */
+.project-modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  align-items: center;
+}
+
+@media (min-width: 600px) {
+  .project-modal-body {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
+
+/* ---- Phone mockup ---- */
+.project-mockup-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.phone-mockup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.phone-frame {
+  width: 200px;
+  background: var(--onyx);
+  border-radius: 36px;
+  border: 6px solid hsl(240, 2%, 30%);
+  box-shadow:
+    0 0 0 2px hsl(240, 2%, 20%),
+    0 20px 40px hsla(0, 0%, 0%, 0.5),
+    inset 0 0 0 1px hsla(255, 255, 255, 0.05);
+  padding: 14px 10px;
+  position: relative;
+}
+
+/* Notch */
+.phone-frame::before {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 10px;
+  background: hsl(240, 2%, 20%);
+  border-radius: 0 0 10px 10px;
+  margin: 0 auto 10px;
+}
+
+.phone-screen {
+  width: 100%;
+  aspect-ratio: 9/17;
+  border-radius: 18px;
+  overflow: hidden;
+  background: hsl(240, 2%, 12%);
+  position: relative;
+}
+
+/* Slides container */
+.project-slides {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-slide {
+  min-width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+}
+
+.project-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Slider controls */
+.slide-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.slide-btn {
+  background: var(--onyx);
+  border: 1px solid var(--jet);
+  color: var(--orange-yellow-crayola);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  cursor: pointer;
+  transition: var(--transition-1);
+}
+
+.slide-btn:hover {
+  background: var(--orange-yellow-crayola);
+  color: var(--smoky-black);
+}
+
+.slide-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.slide-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--jet);
+  transition: var(--transition-1);
+  cursor: pointer;
+}
+
+.slide-dot.active {
+  background: var(--orange-yellow-crayola);
+  transform: scale(1.3);
+}
+
+/* ---- Info panel ---- */
+.project-modal-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.project-modal-category {
+  display: inline-block;
+  background: var(--bg-gradient-yellow-1);
+  color: var(--orange-yellow-crayola);
+  font-size: 11px;
+  font-weight: var(--fw-500);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  padding: 4px 12px;
+  border-radius: 30px;
+  border: 1px solid hsla(45, 100%, 71%, 0.25);
+}
+
+.project-modal-title {
+  color: var(--white-2);
+  font-size: 22px;
+  font-weight: var(--fw-500);
+  line-height: 1.3;
+}
+
+.project-modal-desc {
+  color: var(--light-gray);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.7;
+}
+
+/* Action button */
+.project-modal-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 6px;
+}
+
+.project-action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 22px;
+  border-radius: 14px;
+  font-size: var(--fs-6);
+  font-weight: var(--fw-500);
+  text-decoration: none;
+  transition: var(--transition-1);
+  cursor: pointer;
+  border: none;
+}
+
+.project-action-btn.primary {
+  background: var(--bg-gradient-yellow-1);
+  color: var(--smoky-black);
+  border: 1px solid hsla(45, 100%, 71%, 0.4);
+}
+
+.project-action-btn.primary:hover {
+  background: var(--orange-yellow-crayola);
+  box-shadow: 0 6px 20px hsla(45, 100%, 71%, 0.3);
+  transform: translateY(-2px);
+}
+
+.project-action-btn ion-icon {
+  font-size: 16px;
+}
+
+/*-----------------------------------*\
   #PORTFOLIO
 \*-----------------------------------*/
 
@@ -1079,14 +1346,15 @@ main {
   }
 }
 
-.project-item > a {
+.project-item > a,
+.project-item > .project-card-btn {
   width: 100%;
 }
 
 .project-img {
   position: relative;
   width: 100%;
-  height: 200px;
+  aspect-ratio: 4 / 3;
   border-radius: 16px;
   overflow: hidden;
   margin-bottom: 15px;
@@ -1104,25 +1372,13 @@ main {
   transition: var(--transition-1);
 }
 
-.project-item > a:hover .project-img::before {
+.project-item > a:hover .project-img::before,
+.project-item > .project-card-btn:hover .project-img::before {
   background: hsla(0, 0%, 0%, 0.5);
 }
 /* 1. Turn the figure into a fixed-ratio container */
-.project-img {
-  position: relative; /* This makes sure your absolute icon box stays inside the image */
-  width: 100%;
-  aspect-ratio: 4 / 3; /* Change this to 16/9 or 1/1 depending on the shape you want */
-  overflow: hidden; /* Prevents the image from spilling out of the box */
-  border-radius: 12px; /* Optional: rounds the corners of your project cards */
-}
 
 /* 2. Force the image to fill the figure perfectly */
-.project-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* The magic property that stops squishing */
-  object-position: center;
-}
 
 .project-item-icon-box {
   --scale: 0.8;
@@ -1141,7 +1397,8 @@ main {
   transition: var(--transition-1);
 }
 
-.project-item > a:hover .project-item-icon-box {
+.project-item > a:hover .project-item-icon-box,
+.project-item > .project-card-btn:hover .project-item-icon-box {
   --scale: 1;
   opacity: 1;
 }
@@ -1154,14 +1411,15 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
   transition: var(--transition-1);
 }
 
-.project-item > a:hover img {
+.project-item > a:hover img,
+.project-item > .project-card-btn:hover img {
   transform: scale(1.1);
 }
 
-.project-title,
 .project-category {
   margin-left: 10px;
 }
@@ -1854,7 +2112,7 @@ textarea.form-input::-webkit-resizer {
     grid-template-columns: 1fr 1fr;
   }
 
-  .input-wrapper input[name="fullname"] {
+  .input-wrapper input[name='fullname'] {
     grid-column: span 2;
   }
 

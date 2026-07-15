@@ -487,67 +487,37 @@
               </ul>
             </div>
 
-            <!-- TODO: swap in your real projects (e.g. Fixa, Axon) -->
+            <!-- Project cards — clicking opens the project detail modal -->
             <ul class="project-list">
               <li
                 class="project-item active"
                 data-filter-item
                 data-category="mobile applications"
               >
-                <a href="#">
+                <button
+                  class="project-card-btn"
+                  data-project-item
+                  data-project-title="Michkat"
+                  data-project-category="Mobile Application"
+                  data-project-desc="Michkat is a smart Islamic platform built with Flutter, connecting Muslims with verified scholars for real-time Q&amp;A, fatwa browsing, and religious guidance. It features a beautiful, intuitive UI with smooth animations, offline caching, and multi-language support — making religious knowledge accessible to everyone, everywhere."
+                  data-project-slides='["./assets/images/michkat.png"]'
+                  data-project-link="#"
+                  data-project-link-label="Download APK"
+                  data-project-mockup="phone"
+                >
                   <figure class="project-img">
                     <div class="project-item-icon-box">
                       <ion-icon name="eye-outline"></ion-icon>
                     </div>
                     <img
                       src="./assets/images/michkat.png"
-                      alt="Project name"
+                      alt="Michkat"
                       loading="lazy"
                     />
                   </figure>
                   <h3 class="project-title">Michkat</h3>
                   <p class="project-category">Mobile Applications</p>
-                </a>
-              </li>
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="mobile applications"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                    <img
-                      src="./assets/images/fixa.png"
-                      alt="Project name"
-                      loading="lazy"
-                    />
-                  </figure>
-                  <h3 class="project-title">Fixa</h3>
-                  <p class="project-category">Mobile Applications</p>
-                </a>
-              </li>
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="mobile applications"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-                    <img
-                      src="./assets/images/tayf.png"
-                      alt="Project name"
-                      loading="lazy"
-                    />
-                  </figure>
-                  <h3 class="project-title">Tayf</h3>
-                  <p class="project-category">Mobile Applications</p>
-                </a>
+                </button>
               </li>
 
               <li
@@ -555,102 +525,287 @@
                 data-filter-item
                 data-category="mobile applications"
               >
-                <a href="#">
+                <button
+                  class="project-card-btn"
+                  data-project-item
+                  data-project-title="Fixa"
+                  data-project-category="Mobile Application"
+                  data-project-desc="Fixa is an on-demand home services app that connects users with trusted local technicians — plumbers, electricians, cleaners, and more. Built with Flutter and powered by a real-time backend, Fixa delivers instant booking, live tracking, and in-app chat for a seamless service experience."
+                  data-project-slides='["./assets/images/fixa.png"]'
+                  data-project-link="#"
+                  data-project-link-label="Download APK"
+                  data-project-mockup="phone"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/fixa.png"
+                      alt="Fixa"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Fixa</h3>
+                  <p class="project-category">Mobile Applications</p>
+                </button>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="mobile applications"
+              >
+                <button
+                  class="project-card-btn"
+                  data-project-item
+                  data-project-title="Tayf"
+                  data-project-category="Mobile Application"
+                  data-project-desc="Tayf is a telemedicine app for patients — browse certified doctors, book appointments, and receive prescriptions all from your phone. Built with Flutter for a smooth cross-platform experience."
+                  data-project-slides='["./assets/images/tayf.png"]'
+                  data-project-link="#"
+                  data-project-link-label="Download APK"
+                  data-project-mockup="phone"
+                >
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/tayf.png"
+                      alt="Tayf"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Tayf</h3>
+                  <p class="project-category">Mobile Applications</p>
+                </button>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="mobile applications"
+              >
+                <button
+                  class="project-card-btn"
+                  data-project-item
+                  data-project-title="Tayf (Doctor's)"
+                  data-project-category="Mobile Application"
+                  data-project-desc="The companion app to Tayf, built specifically for healthcare providers. Doctors can manage their schedule, review patient requests, issue e-prescriptions, and conduct video consultations — all in one elegant Flutter interface."
+                  data-project-slides='["./assets/images/tayf-doctor.png"]'
+                  data-project-link="#"
+                  data-project-link-label="Download APK"
+                  data-project-mockup="phone"
+                >
                   <figure class="project-img">
                     <div class="project-item-icon-box">
                       <ion-icon name="eye-outline"></ion-icon>
                     </div>
                     <img
                       src="./assets/images/tayf-doctor.png"
-                      alt="Project name"
+                      alt="Tayf Doctor"
                       loading="lazy"
                     />
                   </figure>
                   <h3 class="project-title">Tayf(Doctor's)</h3>
                   <p class="project-category">Mobile Applications</p>
-                </a>
+                </button>
               </li>
+
               <li
                 class="project-item active"
                 data-filter-item
                 data-category="mobile applications"
               >
-                <a href="#">
+                <button
+                  class="project-card-btn"
+                  data-project-item
+                  data-project-title="ESI Attend"
+                  data-project-category="Mobile Application"
+                  data-project-desc="ESI Attend is a smart attendance system for university students and professors, using QR code scanning to automate and digitise the check-in process. Built with Flutter and Firebase for real-time sync and offline reliability."
+                  data-project-slides='["./assets/images/esi-attend.png"]'
+                  data-project-link="#"
+                  data-project-link-label="Download APK"
+                  data-project-mockup="phone"
+                >
                   <figure class="project-img">
                     <div class="project-item-icon-box">
                       <ion-icon name="eye-outline"></ion-icon>
                     </div>
                     <img
                       src="./assets/images/esi-attend.png"
-                      alt="Project name"
+                      alt="ESI Attend"
                       loading="lazy"
                     />
                   </figure>
                   <h3 class="project-title">ESI Attend</h3>
                   <p class="project-category">Mobile Applications</p>
-                </a>
+                </button>
               </li>
+
               <li
                 class="project-item active"
                 data-filter-item
                 data-category="ui/ux"
               >
-                <a href="#">
+                <button
+                  class="project-card-btn"
+                  data-project-item
+                  data-project-title="Iqra"
+                  data-project-category="UI/UX Design"
+                  data-project-desc="Iqra is a beautifully crafted Quran reading app UI/UX design concept created in Figma. It focuses on a distraction-free reading experience with customisable themes, bookmarking, and elegant Arabic typography."
+                  data-project-slides='["./assets/images/iqra.jpg"]'
+                  data-project-link="#"
+                  data-project-link-label="View on Figma"
+                  data-project-mockup="phone"
+                >
                   <figure class="project-img">
                     <div class="project-item-icon-box">
                       <ion-icon name="eye-outline"></ion-icon>
                     </div>
                     <img
                       src="./assets/images/iqra.jpg"
-                      alt="Project name"
+                      alt="Iqra"
                       loading="lazy"
                     />
                   </figure>
                   <h3 class="project-title">Iqra</h3>
                   <p class="project-category">ui/ux</p>
-                </a>
+                </button>
               </li>
+
               <li
                 class="project-item active"
                 data-filter-item
                 data-category="mobile applications"
               >
-                <a href="#">
+                <button
+                  class="project-card-btn"
+                  data-project-item
+                  data-project-title="Inge Scanner"
+                  data-project-category="Mobile Application"
+                  data-project-desc="Inge Scanner is a Flutter-powered document scanning app that transforms your phone camera into a professional scanner. It supports multi-page PDFs, auto edge detection, image enhancement, and cloud upload — perfect for students and professionals."
+                  data-project-slides='["./assets/images/inge.png"]'
+                  data-project-link="#"
+                  data-project-link-label="Download APK"
+                  data-project-mockup="phone"
+                >
                   <figure class="project-img">
                     <div class="project-item-icon-box">
                       <ion-icon name="eye-outline"></ion-icon>
                     </div>
                     <img
                       src="./assets/images/inge.png"
-                      alt="Project name"
+                      alt="Inge Scanner"
                       loading="lazy"
                     />
                   </figure>
                   <h3 class="project-title">Inge Scanner</h3>
                   <p class="project-category">Mobile Applications</p>
-                </a>
+                </button>
               </li>
+
               <li
                 class="project-item active"
                 data-filter-item
                 data-category="mobile applications"
               >
-                <a href="#">
+                <button
+                  class="project-card-btn"
+                  data-project-item
+                  data-project-title="eCarly"
+                  data-project-category="Mobile Application"
+                  data-project-desc="eCarly is a modern e-commerce Flutter app for buying and selling cars. It features advanced filters, real-time listings, in-app messaging between buyers and sellers, and a sleek, intuitive car browsing experience."
+                  data-project-slides='["./assets/images/exarly.png"]'
+                  data-project-link="#"
+                  data-project-link-label="Download APK"
+                  data-project-mockup="phone"
+                >
                   <figure class="project-img">
                     <div class="project-item-icon-box">
                       <ion-icon name="eye-outline"></ion-icon>
                     </div>
                     <img
                       src="./assets/images/exarly.png"
-                      alt="Project name"
+                      alt="eCarly"
                       loading="lazy"
                     />
                   </figure>
                   <h3 class="project-title">eCarly</h3>
                   <p class="project-category">Mobile Applications</p>
-                </a>
+                </button>
               </li>
             </ul>
+
+            <!-- Project Detail Modal -->
+            <div class="project-modal-container" data-project-modal-container>
+              <div class="overlay" data-project-overlay></div>
+              <section class="project-modal">
+                <button class="modal-close-btn" data-project-modal-close-btn>
+                  <ion-icon name="close-outline"></ion-icon>
+                </button>
+
+                <div class="project-modal-body">
+                  <!-- Left: Phone mockup with slider -->
+                  <div class="project-mockup-wrap">
+                    <div class="phone-mockup">
+                      <div class="phone-frame">
+                        <div class="phone-screen">
+                          <div class="project-slides" data-project-slides-track>
+                            <!-- slides injected by JS -->
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Slider controls -->
+                      <div class="slide-controls">
+                        <button
+                          class="slide-btn prev"
+                          data-slide-prev
+                          aria-label="Previous slide"
+                        >
+                          <ion-icon name="chevron-back-outline"></ion-icon>
+                        </button>
+                        <div class="slide-dots" data-slide-dots></div>
+                        <button
+                          class="slide-btn next"
+                          data-slide-next
+                          aria-label="Next slide"
+                        >
+                          <ion-icon name="chevron-forward-outline"></ion-icon>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Right: Project info -->
+                  <div class="project-modal-info">
+                    <span
+                      class="project-modal-category"
+                      data-project-modal-category
+                    ></span>
+                    <h3
+                      class="project-modal-title"
+                      data-project-modal-title
+                    ></h3>
+                    <p class="project-modal-desc" data-project-modal-desc></p>
+
+                    <div class="project-modal-actions">
+                      <a
+                        href="#"
+                        class="project-action-btn primary"
+                        data-project-modal-link
+                        target="_blank"
+                        rel="noopener"
+                      >
+                        <ion-icon name="download-outline"></ion-icon>
+                        <span data-project-modal-link-label>Download APK</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
           </section>
         </article>
 
