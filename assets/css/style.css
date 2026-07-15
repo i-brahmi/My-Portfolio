@@ -2366,3 +2366,56 @@ textarea.form-input::-webkit-resizer {
     max-width: 700px;
   }
 }
+
+/*-----------------------------------*\
+  #PROJECT MODAL — MOBILE FIX
+\*-----------------------------------*/
+
+/* Fix flexbox centering clipping overflow content on small screens */
+
+.project-modal {
+  margin: 0 auto;
+  max-height: none;
+}
+
+@media (max-width: 599px) {
+  .project-modal {
+    padding: 22px 16px 18px;
+    border-radius: 16px;
+  }
+
+  .project-modal-container {
+    align-items: flex-start;
+    padding: 24px 12px;
+  }
+
+  .project-modal-body {
+    gap: 18px;
+  }
+
+  .phone-frame {
+    width: 150px;
+    border-width: 4px;
+    padding: 10px 8px;
+    border-radius: 26px;
+  }
+
+  .phone-frame::before {
+    width: 44px;
+    height: 8px;
+    margin-bottom: 6px;
+  }
+
+  .project-modal-title {
+    font-size: 18px;
+  }
+
+  .project-modal-desc {
+    font-size: var(--fs-7);
+  }
+
+  .project-action-btn {
+    padding: 9px 16px;
+    font-size: var(--fs-7);
+  }
+}
