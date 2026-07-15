@@ -1070,8 +1070,10 @@ main {
 .project-mockup-wrap {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   flex-shrink: 0;
+  height: 100%;
 }
 
 .phone-mockup {
@@ -1216,6 +1218,8 @@ main {
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
   line-height: 1.7;
+  font-size: var(--fs-7);
+  white-space: pre-line;
 }
 
 /* Action button */
@@ -1241,12 +1245,13 @@ main {
 }
 
 .project-action-btn.primary {
-  background: var(--bg-gradient-yellow-1);
-  color: var(--smoky-black);
+  /* background: var(--bg-gradient-yellow-1); */
+  color: var(--orange-yellow-crayola);
   border: 1px solid hsla(45, 100%, 71%, 0.4);
 }
 
 .project-action-btn.primary:hover {
+  color: var(--smoky-black);
   background: var(--orange-yellow-crayola);
   box-shadow: 0 6px 20px hsla(45, 100%, 71%, 0.3);
   transform: translateY(-2px);
@@ -2408,10 +2413,6 @@ textarea.form-input::-webkit-resizer {
 
   .project-modal-title {
     font-size: 18px;
-  }
-
-  .project-modal-desc {
-    font-size: var(--fs-7);
   }
 
   .project-action-btn {
