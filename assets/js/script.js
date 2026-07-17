@@ -276,6 +276,11 @@ const modalLinkLabel = document.querySelector(
   '[data-project-modal-link-label]',
 );
 
+const phoneFrame = document.querySelector('[data-phone-frame]');
+const phoneScreen = document.querySelector('[data-phone-screen]');
+const laptopFrame = document.querySelector('[data-laptop-frame]');
+const laptopScreen = document.querySelector('[data-laptop-screen]');
+
 const slidesWrapper = document.querySelector('[data-project-slides-track]');
 const slideDotsWrap = document.querySelector('[data-slide-dots]');
 const slidePrevBtn = document.querySelector('[data-slide-prev]');
@@ -295,6 +300,24 @@ let totalSlides = 0;
 // ============================================================
 // Slider
 // ============================================================
+
+let autoplayTimer = null;
+const AUTOPLAY_DELAY = 3500;
+
+function startAutoplay() {
+  stopAutoplay();
+  if (totalSlides <= 1) return;
+  autoplayTimer = setInterval(() => {
+    goToSlide(currentSlide + 1);
+  }, AUTOPLAY_DELAY);
+}
+
+function stopAutoplay() {
+  if (autoplayTimer) {
+    clearInterval(autoplayTimer);
+    autoplayTimer = null;
+  }
+}
 
 function buildSlides(images) {
   slidesWrapper.innerHTML = '';
@@ -317,7 +340,10 @@ function buildSlides(images) {
     const dot = document.createElement('button');
     dot.className = `slide-dot${idx === 0 ? ' active' : ''}`;
 
-    dot.addEventListener('click', () => goToSlide(idx));
+    dot.addEventListener('click', () => {
+      goToSlide(idx);
+      startAutoplay();
+    });
 
     slideDotsWrap.appendChild(dot);
   });
@@ -345,10 +371,12 @@ function goToSlide(index) {
 
 slidePrevBtn?.addEventListener('click', () => {
   goToSlide(currentSlide - 1);
+  startAutoplay();
 });
 
 slideNextBtn?.addEventListener('click', () => {
   goToSlide(currentSlide + 1);
+  startAutoplay();
 });
 
 // ============================================================
@@ -379,7 +407,22 @@ function openProjectModal(card) {
     );
   }
 
+  // Switch between phone and laptop mockup frames
+  const mockupType =
+    card.dataset.projectMockup === 'laptop' ? 'laptop' : 'phone';
+
+  if (mockupType === 'laptop') {
+    laptopScreen.appendChild(slidesWrapper);
+    laptopFrame.hidden = false;
+    phoneFrame.hidden = true;
+  } else {
+    phoneScreen.appendChild(slidesWrapper);
+    phoneFrame.hidden = false;
+    laptopFrame.hidden = true;
+  }
+
   buildSlides(slides.length ? slides : ['./assets/images/project-1.jpg']);
+  startAutoplay();
 
   projectModalContainer.classList.add('active');
   projectOverlay.classList.add('active');
@@ -388,7 +431,10 @@ function openProjectModal(card) {
 }
 
 function closeProjectModal() {
+  stopAutoplay();
+
   projectModalContainer.classList.remove('active');
+
   projectOverlay.classList.remove('active');
 
   document.body.style.overflow = '';
